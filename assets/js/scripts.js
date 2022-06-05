@@ -13,4 +13,11 @@ function increment(){
 currentNumber = currentNumber + 1;
 currentNumberWrapper.innerHTML = currentNumber;
 }
+//usando o evento listener para desafio
+const element = document.getElementById("cliqueaqui");
+element.addEventListener("click", myFunction);
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = ("MÁGICA");
+}
 
