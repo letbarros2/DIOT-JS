@@ -1,0 +1,28 @@
+/* body{
+    color: grey;
+    }
+     */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap');
+
+* {
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+}
+
+#add{
+    background-color: rgb(163, 197, 207);
+    color: rgb(1, 1, 17);
+    text-align: center;
+    cursor: pointer;
+}
+#tarefa {
+    background-color: rgba(163, 197, 207, 0.76);
+    
+}
