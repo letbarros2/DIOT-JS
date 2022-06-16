@@ -59,3 +59,17 @@ class contaCOrrente{
         this._cartaoCredito = valor
     }
 }
+
+class contaPoupanca{
+    constructor(agencia, numero, saldo){
+        super(agencia,numero,saldo);
+        this.tipo = 'poupanca';
+    }
+
+}
+class contaUniversitaria{
+    constructor(agencia, numero, saldo){
+        super(agencia,numero,saldo);
+        this.tipo = 'universitaria';
+    }
+}
