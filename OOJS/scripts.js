@@ -46,7 +46,7 @@ depositar(valor){
 
 }    
 }
-class contaCOrrente{
+class contaCOrrente extends contaBancaria{
     constructor(agencia, numero, saldo, cartaoCredito){
         super(agencia,numero,saldo);
         this.tipo = 'corrente';
@@ -60,16 +60,24 @@ class contaCOrrente{
     }
 }
 
-class contaPoupanca{
+class contaPoupanca extends contaBancaria{
     constructor(agencia, numero, saldo){
         super(agencia,numero,saldo);
         this.tipo = 'poupanca';
     }
 
 }
-class contaUniversitaria{
+class contaUniversitaria extends contaBancaria{
     constructor(agencia, numero, saldo){
         super(agencia,numero,saldo);
         this.tipo = 'universitaria';
     }
-}
+    sacar(valor){
+        if(valor > 500){
+            return "Operacação negada"
+        }
+            this._saldo = this._saldo - valor;
+            return this._saldo;
+        }
+
+    }    
